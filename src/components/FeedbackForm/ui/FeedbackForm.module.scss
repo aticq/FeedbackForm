@@ -1,0 +1,88 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedbackForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  background-color: white;
+}
+
+.feedbackForm div {
+  background-color: white;
+}
+
+.title {
+  margin-top: 35px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 35px;
+}
+
+input,
+textarea {
+  border: none;
+  border-bottom: 2px solid #ddd;
+  font-size: 16px;
+  padding: 10px;
+  transition: all 0.3s ease;
+  background-color: transparent;
+  resize: none;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  color: #777;
+  background-color: white;
+  transform-origin: 0 0;
+  transition: all 0.2s ease-out;
+  pointer-events: none;
+}
+
+input:focus ~ label,
+textarea:focus ~ label,
+input:valid ~ label,
+textarea:valid ~ label {
+  font-size: 12px;
+  color: #007bff;
+  transform: translateY(-100%) scale(0.8);
+}
+
+input:valid,
+textarea:valid {
+  border-color: #007bff;
+}
+textarea.message:focus {
+  height: 150px;
+  resize: none;
+}
+.buttonContainer{
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
